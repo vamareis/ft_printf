@@ -6,7 +6,7 @@
 /*   By: vamachad <vamachad@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 20:58:05 by vamachad          #+#    #+#             */
-/*   Updated: 2024/05/05 00:54:50 by vamachad         ###   ########.fr       */
+/*   Updated: 2024/05/05 03:46:20 by vamachad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,13 +40,7 @@ int	print_nbr(int n)
 		write(1, "-", 1);
 	}
 	if (nbr >= 10)
-	{
 		print_nbr(nbr / 10);
-		print_nbr(nbr % 10);
-	}
-	else if (nbr < 10)
-	{
-		write(1, &"0123456789"[nbr], 1);
-	}
+	write(1, &"0123456789"[nbr % 10], 1);
 	return (count_digits((long)n));
 }
