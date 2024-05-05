@@ -6,7 +6,7 @@
 /*   By: vamachad <vamachad@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 19:53:10 by vamachad          #+#    #+#             */
-/*   Updated: 2024/05/05 00:50:33 by vamachad         ###   ########.fr       */
+/*   Updated: 2024/05/05 02:10:31 by vamachad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,9 @@ static int	count_digits(unsigned long long n)
 
 static void	print_ptr(unsigned long long n)
 {
-	char	*base;
-
-	base = "0123456789abcdef";
 	if (n >= 16)
 		print_ptr(n / 16);
-	write(1, &base[n % 16], 1);
+	write(1, &"0123456789abcdef"[n % 16], 1);
 }
 
 int	print_address(void *ptr)
