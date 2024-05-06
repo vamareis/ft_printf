@@ -6,13 +6,13 @@
 /*   By: vamachad <vamachad@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 20:58:05 by vamachad          #+#    #+#             */
-/*   Updated: 2024/05/05 03:50:38 by vamachad         ###   ########.fr       */
+/*   Updated: 2024/05/06 16:31:03 by vamachad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	count_unsigned_digits(unsigned long n, unsigned int base)
+static int	count_unsigned_digits(unsigned long n, unsigned int base)
 {
 	int	count;
 

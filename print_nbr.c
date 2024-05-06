@@ -6,13 +6,13 @@
 /*   By: vamachad <vamachad@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 20:58:05 by vamachad          #+#    #+#             */
-/*   Updated: 2024/05/05 03:46:20 by vamachad         ###   ########.fr       */
+/*   Updated: 2024/05/06 16:30:23 by vamachad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	count_digits(long n)
+static int	count_digits(long n)
 {
 	int	count;
 
