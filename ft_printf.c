@@ -42,7 +42,7 @@ int	ft_printf(const char *format, ...)
 	va_list	ap;
 
 	if (!format)
-		return (0);
+		return (-1);
 	count = 0;
 	va_start(ap, format);
 	while (*format)
@@ -57,10 +57,10 @@ int	ft_printf(const char *format, ...)
 	return (count);
 }
 
-/*int	main(void)
+/* int	main(void)
 {
 	int my = ft_printf("%u\n", -1);
 	ft_printf("%d\n", my);
 	int not = printf("%u\n", -1);
 	printf("%d\n", not);
-}*/
+} */
